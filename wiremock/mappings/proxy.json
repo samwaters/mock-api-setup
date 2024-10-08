@@ -1,0 +1,10 @@
+{
+    "priority": 10,
+    "request": {
+        "method": "GET",
+        "urlPattern": "/api/.*"
+    },
+    "response": {
+        "proxyBaseUrl": "http://api:8081"
+    }
+}

@@ -1,0 +1,9 @@
+{
+{{parseJson request.body 'bodyJson'}}
+{{#if (contains bodyJson.username 'sam')}}
+  "id": 1,
+  "name": "Sam"
+{{else}}
+  "error": "Invalid Credentials"
+{{/if}}
+}

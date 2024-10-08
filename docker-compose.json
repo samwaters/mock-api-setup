@@ -1,0 +1,14 @@
+{
+    "services": {
+        "api": {
+            "build": "./api-server",
+            "image": "api-server:latest",
+            "ports": ["8081:8081"]
+        },
+        "wiremock": {
+            "image": "wiremock/wiremock:latest",
+            "ports": ["8080:8080"],
+            "volumes": ["./wiremock:/home/wiremock"]
+        }
+    }
+}
